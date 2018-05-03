@@ -1,0 +1,8 @@
+%!TEX root=paper.tex
+
+\begin{abstract}
+
+Improving power efficiency is critical in today's computing systems. From smartphones and IoT devices, to the cloud and datacenters, power efficiency entails better systems, indicated by longer battery time or lower operating cost. In this thesis proposal, we focus on improving microprocessor power efficiency by optimizing processor's pipeline timing margin. The problem we address is that the timing margin in conventional microprocessors is a static value determined during chip design stage, and is significantly over-provisioned to protect against hypothetical ``worst-case'' situations, which rarely occur in processor's real-world usage scenarios. To reclaim the wasted timing margin, we study \textit{active timing margin}, a runtime technique that dynamically adjusts pipeline timing margin to match real-time load conditions. We propose synergistic management schemes that involve circuit, architecture, and system software techniques to safely accommodate various load conditions and to maximize active timing margin's potential benefits. At circuit level, a set of sensors are needed to provide cycle-level information of pipeline timing margin. At architecture level, hardware and software techniques are implemented to address different load conditions. In system software, an intelligent application mapper help maximize the gains of active timing margin. This proposal is likely to have practical impact because our research is conducted with strong measurement capability on state-of-the-art hardware, and the active timing margin solution we propose has wide applicability on different processor architectures.
+
+\end{abstract}
+

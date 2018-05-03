@@ -1,0 +1,129 @@
+%!TEX root=paper.tex
+
+
+\usepackage{xspace}
+\usepackage{parskip}
+\usepackage{wrapfig}
+\usepackage{times}
+\usepackage{graphicx}
+\usepackage{titling}
+\usepackage{titlesec}
+\usepackage{subfig}
+\usepackage{bigstrut}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage[T1]{fontenc}
+\usepackage[sc]{mathpazo} % Use the great palatino font provided by the mathpazo package. Add osf for old style figures
+\usepackage{helvet} % default for \textsf
+\usepackage{zi4} % default for \texttt
+\usepackage{amsmath}
+\usepackage{lipsum}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage{listings}
+\usepackage{soul}
+\usepackage[skip=.1in]{caption}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{textcomp}
+\usepackage{fancyhdr}
+\usepackage[normalem]{ulem}
+\usepackage[hyphens]{url}
+\usepackage{makecell}
+\usepackage{gensymb}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+\usepackage{pbox}
+\usepackage[british]{babel}
+
+\usepackage[colorlinks = true,
+            linkcolor = blue,
+            urlcolor  = blue,
+            citecolor = red,
+            anchorcolor = blue]{hyperref}
+
+\captionsetup{textfont={small,sf},labelfont={bf,small}}
+
+
+\clubpenalty 10000
+\widowpenalty 10000
+\def\topfraction{0.9}
+\def\bottomfraction{0.9}
+\def\textfraction{0.1}
+
+% margins
+\topmargin -0.5truein
+\textheight 9.0truein
+\oddsidemargin 0truein
+\evensidemargin 0truein
+\textwidth 6.5truein
+\setlength{\parskip}{2mm}
+%\setlength{\droptitle}{-5em}   % Set spacing before title
+
+\titleformat*{\section}{\large\bfseries}
+\titleformat*{\subsection}{\bfseries}
+\titleformat*{\subsubsection}{\bfseries}
+
+\titlespacing*{\section}
+{0pt}{2.2ex plus 1ex minus .2ex}{2.2ex plus .2ex}
+\titlespacing*{\subsection}
+{0pt}{1ex plus 1ex minus .2ex}{1ex plus .2ex}
+
+\graphicspath{{figs/}}
+
+
+\newcommand{\fixme}[1]{\textcolor{blue}{#1}}
+\newcommand{\TODO}[1]{\textcolor{red}{TODO:#1}}
+
+\newcommand{\benchmark}[1]{\textsf{#1}}
+\newcommand{\website}[1]{{\tt #1}}
+\newcommand{\program}[1]{{\tt #1}}
+
+\newcommand{\Fig}[1]{Fig.~\ref{#1}}
+\newcommand{\Tab}[1]{Table~\ref{#1}}
+\newcommand{\Equ}[1]{Equ.~\ref{#1}}
+\newcommand{\Apx}[1]{Appendix.~\ref{#1}}
+\newcommand{\Algo}[1]{Algorithm~\ref{#1}}
+
+\newcommand{\Sec}[1]{Sec.~\ref{#1}}
+\renewcommand{\paragraph}[1]{\textbf{#1}~~}
+
+\newcommand{\Mark}[1]{\textsuperscript{#1}}
+\newcommand{\marker}[1]{{\sl #1}}
+\newcommand{\ignore}[1]{}
+\newcommand{\note}[1]{\textcolor{red}{#1}}
+
+\newcommand{\C}{$\celsius$\xspace}
+\newcommand{\tistate}{{\fontfamily{cmtt}\selectfont T$_{i}$-state}\xspace}
+\newcommand{\tistates}{{\fontfamily{cmtt}\selectfont T$_{i}$-states}\xspace}
+
+\newcommand{\ams}{{\fontfamily{cmtt}\selectfont AMS}\xspace}
+
+
+\newcommand{\BIBdecl}{\setlength{\itemsep}{1 pt}}
+
+\newcommand{\specialcell}[2][c]{\begin{tabular}[#1]{@{}l@{}}#2\end{tabular}}
+
+\newcolumntype{x}[1]{>{\centering\arraybackslash\hspace{0pt}}p{#1}}
+\newcolumntype{y}[1]{>{\raggeright\arraybackslash\hspace{0pt}}p{#1}}
+
+\soulregister\cite7
+\soulregister\Fig7
+\soulregister\Sec7
+\soulregister\benchmark7
+
+\pretolerance=5000
+\tolerance=500 
+\emergencystretch=10pt
+
+
+%copy from yuhao's preamble
+
+\renewcommand{\figurename}{Fig.}
+\newcommand{\figline}{{\vspace*{.05in}\hline}}
+\newcommand{\Sect}[1]{Sec.~\ref{#1}}
+\newcommand{\Tbl}[1]{Table~\ref{#1}}
+
+\newcommand{\greenweb}{{\fontfamily{cmtt}\selectfont GreenWeb}\xspace}
+\newcommand{\webcore}{{\fontfamily{cmtt}\selectfont WebCore}\xspace}
+\newcommand{\webrt}{{\fontfamily{cmtt}\selectfont WebRT}\xspace}
+\newcommand{\autogreen}{\textsc{AutoGreen}\xspace}
